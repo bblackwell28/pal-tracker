@@ -1,0 +1,18 @@
+plugins {
+    id "java"
+    id "org.springframework.boot" version "1.5.4.RELEASE"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+}
+
+//assignments {
+//    apiUrl = "https://blue-ash-2018-01.pal.pivotal.io"
+//    email = "john.berman@8451.com"
+//    cohortIdentifier = 349802149
+//}
