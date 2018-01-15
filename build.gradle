@@ -9,10 +9,13 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
-//assignments {
-//    apiUrl = "https://blue-ash-2018-01.pal.pivotal.io"
-//    email = "john.berman@8451.com"
-//    cohortIdentifier = 349802149
-//}
+bootRun.environment([
+        "WELCOME_MESSAGE": "hello world",
+])
+
+test.environment([
+        "WELCOME_MESSAGE": "Hello from test",
+])
