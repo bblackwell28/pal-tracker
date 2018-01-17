@@ -2,7 +2,7 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
-  host: ps-pal-tracker-review-km
+  host: pal-tracker-review-km-bb
   services:
   - tracker-database
   env:
