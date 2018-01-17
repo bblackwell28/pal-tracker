@@ -5,20 +5,24 @@ import java.util.Objects;
 
 public class TimeEntry {
     private long id;
+    private long projectId;
+    private long userId;
+    private LocalDate date;
+    private int hours;
 
-    public int getProjectId() {
+    public long getProjectId() {
         return projectId;
     }
 
-    public void setProjectId(int projectId) {
+    public void setProjectId(long projectId) {
         this.projectId = projectId;
     }
 
-    public int getUserId() {
+    public long getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(long userId) {
         this.userId = userId;
     }
 
@@ -37,11 +41,6 @@ public class TimeEntry {
     public void setHours(int hours) {
         this.hours = hours;
     }
-
-    private int projectId;
-    private int userId;
-    private LocalDate date;
-    private int hours;
 
     public TimeEntry() {}
 
