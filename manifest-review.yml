@@ -7,3 +7,4 @@ applications:
   - tracker-database
   env:
     WELCOME_MESSAGE: Hello from the review environment
+    SECURITY_FORCE_HTTPS: true
